@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&display=swap');
+
+:root {
+  --text-color: #ffeee1;
+  --accent-color: #e54a24;
+  --accent-hover-color: #c91d23;
+  --accent-hover-secondary-color: #a6163c;
+  --secondary-color: #493225;
+  --secondary-hover-color: #361f1a;
+  --background-color: #1a1511;
+  --outside-color: #050306;
+
+  --text-size-small: 24px;
+  --text-size-default: 32px;
+  --text-size-large: 48px;
+  --text-size-xlarge: 64px;
+
+  --text-letter-spacing-default: 1px;
+
+  --border-radius-default: 6px;
+
+  --scale-transition-time: 0.3s;
+  --shift-transition-time: 0.1s;
+  --enlrage-scale: 1.02;
+  --Y-button-offset: 1px;
+}
+
+body {
+  background-color: var(--outside-color);
+  color: var(--text-color);
+  font-family: "Dorsa", sans-serif;
+  font-size: var(--text-size-default);
+  letter-spacing: var(--text-letter-spacing-default);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
