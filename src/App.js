@@ -1,17 +1,28 @@
-import logo from './logo.jpg';
-import './index.css'
+import './index.css';
 import './App.css';
 
-function App() {
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Header from "./components/Header"
+
+import StartPage from "./pages/StartPage";
+import ArtPage from "./pages/ArtPage";
+import GamedevPage from "./pages/GamdevPage";
+
+const App = () => {
   return (
-    <div className="main">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <a>
-          hardcore
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <div className="App-main">
+            <Header />
+            <Routes>
+              <Route path="/" element={<StartPage />} />
+              <Route path="/Art" element={<ArtPage />} />
+              <Route path="/Gamedev" element={<GamedevPage />} />
+            </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

@@ -22,10 +22,8 @@
   --scale-transition-time: 0.3s;
   --shift-transition-time: 0.1s;
   --enlrage-scale: 1.02;
-  --Y-button-offset: 1px;
-}
+  --Y-button-offset: 2px;
 
-body {
   background-color: var(--outside-color);
   color: var(--text-color);
   font-family: "Dorsa", sans-serif;
@@ -34,4 +32,9 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: normal;
 }
