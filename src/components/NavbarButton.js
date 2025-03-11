@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 
-const NavbarButton = ({ to, label }) => {
+const NavbarButton = ({ to, label, locked, onClick }) => {
   return (
-        <Link className="Navbar-link" to={to}>{label}</Link>
+        <Link
+          className={locked == true ? "Navbar-link-locked" : "Navbar-link"}
+          to={to}
+          onClick={onClick}
+        >
+          {label}
+        </Link>
   );
 };
 

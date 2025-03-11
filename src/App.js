@@ -1,7 +1,7 @@
 import './index.css';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import Header from "./components/Header"
 
@@ -16,7 +16,8 @@ const App = () => {
         <div className="App-main">
             <Header />
             <Routes>
-              <Route path="/" element={<StartPage />} />
+              <Route path="*" element={<Navigate to="/Start" replace />} />
+              <Route path="/Start" element={<StartPage />} />
               <Route path="/Art" element={<ArtPage />} />
               <Route path="/Gamedev" element={<GamedevPage />} />
             </Routes>
