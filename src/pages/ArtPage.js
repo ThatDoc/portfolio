@@ -1,7 +1,12 @@
-const ArtPage = () => {
+import ImageGallery from "../components/ImageGallery";
+
+const ArtPage = ({images}) => {
     return (
         <div>
-            <a> Art </a>
+            <div>
+                <a> Art </a>
+            </div>
+            <ImageGallery images={images}/>
         </div>
     );
 }
