@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="Navbar">
-        <a style={{ display: "flex", gap: "0px", listStyle: "none" }}>
+        <div style={{ display: "flex", gap: "0px", listStyle: "none" }}>
           {["Start", "Art", "Gamedev"].map((button) => (
               <NavbarButton 
                 key={button}
@@ -22,7 +22,7 @@ const Navbar = () => {
                 onClick={() => handleClick(button)}
               />
           ))}
-        </a>
+        </div>
     </div>
   );
 };
