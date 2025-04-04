@@ -4,7 +4,7 @@ import NavbarButton from "./NavbarButton"
 
 const Navbar = () => {
   const location = useLocation();
-  const [lockedButton, setLockedbutton] = useState(location.pathname.replace('/', ''));
+  const [lockedButton, setLockedbutton] = useState(location.pathname.replace('/', '') || "Start");
 
   const handleClick = (button) => {
     setLockedbutton(button);

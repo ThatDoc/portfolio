@@ -5,9 +5,9 @@ const ArtPage = () => {
     const images = useImages();
 
     return (
-        <div>
+        <div className="Page-container">
             <div>
-                <a> Art </a>
+                <h2> - Art - </h2>
             </div>
             <ImageGallery images={images}/>
         </div>

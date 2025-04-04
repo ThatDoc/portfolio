@@ -9,19 +9,20 @@ const GalleryImageView = ({image}) => {
             const fetchedImageUrl = await fetchImage(image.path);
             setImageSrc(fetchedImageUrl);
         };
-
         loadImage();
-    }, [image.url]);
+    }, [image.path]);
 
     return (
-        <div>
+        <div className="GalleryImage-container">
             {imageSrc ? (
-                <img src={imageSrc} alt={image.title} id={image.title}></img>
+                <div>
+                    <img src={imageSrc} alt={image.title} id={image.title} className="GalleryImage"/>
+                    <h3>- {image.title} -</h3>
+                    <p>{image.desc}</p>
+                </div>
             ) : (
                 <p>Loading image...</p>
             )}
-            <h3>{image.title}</h3>
-            <p>{image.desc}</p>
         </div>
     );
 };
