@@ -1,6 +1,9 @@
 import ImageGallery from "../components/ImageGallery";
+import useImages from "../hooks/useImages";
 
-const ArtPage = ({images}) => {
+const ArtPage = () => {
+    const images = useImages();
+
     return (
         <div>
             <div>
