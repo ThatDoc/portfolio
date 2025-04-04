@@ -1,8 +1,12 @@
+import PageHeader from "../components/PageHeader";
+
 const StartPage = () => {
     return (
-        <div>
-            <a> Start </a>
-        </div>   
+        <div className="Page-container">
+            <div className="PageHeader-container">
+                <PageHeader title="Start"/>
+            </div>
+        </div>
     );
 }
 

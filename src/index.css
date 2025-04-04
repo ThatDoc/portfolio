@@ -5,8 +5,8 @@
   --accent-color: #e54a24;
   --accent-hover-color: #c91d23;
   --accent-hover-secondary-color: #a6163c;
-  --secondary-color: #493225;
-  --secondary-hover-color: #361f1a;
+  --secondary-color: #392E25;
+  --secondary-hover-color: #2c201a;
   --background-color: #1a1511;
   --outside-color: #050306;
   --text-size-small: 24px;
@@ -19,6 +19,7 @@
   --shift-transition-time: 0.1s;
   --enlrage-scale: 1.02;
   --Y-button-offset: 2px;
+  --side-border-size: .1em;
   background-color: var(--outside-color);
   color: var(--text-color);
   font-family: "Dorsa", sans-serif;
@@ -32,4 +33,22 @@
 
 h1, h2, h3 {
   font-weight: normal;
+}
+
+.horizontal-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.horizontal-line hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid var(--text-color);
+  margin: 0 .4em;
+}
+.horizontal-line a {
+  text-decoration: none;
+  font-size: var(--text-size-default);
+  user-select: none;
 }

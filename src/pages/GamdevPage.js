@@ -1,7 +1,16 @@
+import ImageGallery from "../components/ImageGallery";
+import useImages from "../hooks/useImages";
+import PageHeader from "../components/PageHeader";
+
 const GamedevPage = () => {
+    const images = useImages();
+
     return (
-        <div>
-            <a> Gamedev </a>
+        <div className="Page-container">
+            <div className="PageHeader-container">
+                <PageHeader title="Gamedev"/>
+            </div>
+            <ImageGallery images={images}/>
         </div>
     );
 }
