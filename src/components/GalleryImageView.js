@@ -15,7 +15,7 @@ const GalleryImageView = ({image}) => {
     return (
         <div className="GalleryImage-container">
             {imageSrc ? (
-                <div>
+                <div className="GalleryImage-content">
                     <img src={imageSrc} alt={image.title} id={image.title} className="GalleryImage"/>
                     <h3>- {image.title} -</h3>
                     <p>{image.desc}</p>

@@ -15,6 +15,7 @@
   --text-size-xlarge: 64px;
   --text-letter-spacing-default: 1px;
   --border-radius-default: 6px;
+  --slide-transition-time: 0.4s;
   --scale-transition-time: 0.3s;
   --shift-transition-time: 0.1s;
   --enlrage-scale: 1.02;
@@ -33,6 +34,7 @@
 
 h1, h2, h3 {
   font-weight: normal;
+  animation: fadeSlideInTop var(--slide-transition-time) ease-out both;
 }
 
 .horizontal-line {
