@@ -3,7 +3,7 @@ import useImages from "../hooks/useImages";
 import PageHeader from "../components/PageHeader";
 
 const GamedevPage = () => {
-    const images = useImages();
+    const images = useImages("gamedev");
 
     return (
         <div className="Page-container">

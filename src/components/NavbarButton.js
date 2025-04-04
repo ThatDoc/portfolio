@@ -18,7 +18,7 @@ const NavbarButton = ({ to, label, locked, onClick }) => {
 
   return (
         <Link
-          className={locked == true ? "Navbar-link-locked" : "Navbar-link"}
+          className={locked === true ? "Navbar-link-locked" : "Navbar-link"}
           to={to}
           onClick={onClick}
           onMouseEnter={playHoverSound}

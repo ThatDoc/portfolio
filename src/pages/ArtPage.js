@@ -3,8 +3,9 @@ import useImages from "../hooks/useImages";
 import PageHeader from "../components/PageHeader";
 
 const ArtPage = () => {
-    const images = useImages();
-
+    const images = useImages("art");
+    console.log(images);
+    
     return (
         <div className="Page-container">
             <div className="PageHeader-container">
