@@ -70,6 +70,10 @@
   transform: translateY(var(--Y-button-offset));
 }
 
+.Page-container {
+  background-color: var(--background-color);
+}
+
 .Page-header {
   background-color: var(--secondary-hover-color);
   margin-left: -.5em;

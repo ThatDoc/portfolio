@@ -4,7 +4,7 @@ function Header() {
     return (
         <div className="App-header">
             <h1>
-                <a>{"- daamn -"}</a>
+                <a>{"- Wojciech Liss-"}</a>
             </h1>
             <Navbar />
         </div>

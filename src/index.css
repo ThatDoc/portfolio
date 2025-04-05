@@ -32,9 +32,14 @@
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-weight: normal;
   animation: fadeSlideInTop var(--slide-transition-time) ease-out both;
+}
+
+p {
+  margin: 1em;
+  text-align: justify;
 }
 
 .horizontal-line {
@@ -53,4 +58,14 @@ h1, h2, h3 {
   text-decoration: none;
   font-size: var(--text-size-default);
   user-select: none;
+}
+
+a.link {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+a.link:hover {
+  text-decoration: none;
+  color: var(--accent-hover-color);
 }
