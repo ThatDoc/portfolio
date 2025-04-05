@@ -5,6 +5,9 @@ const StartPage = () => {
         <div className="Page-container">
             <div className="PageHeader-container">
                 <PageHeader title="Start"/>
+                <p>
+                    behold.
+                </p>
             </div>
         </div>
     );

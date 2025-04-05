@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import fetchImage from "../utils/imageFetch"
+import Divider from "./Divider";
 
 const GalleryImageView = ({image}) => {
     const [imageSrc, setImageSrc] = useState(null);
@@ -17,8 +18,9 @@ const GalleryImageView = ({image}) => {
             {imageSrc ? (
                 <div className="GalleryImage-content">
                     <img src={imageSrc} alt={image.title} id={image.title} className="GalleryImage"/>
-                    <h3>- {image.title} -</h3>
-                    <p>{image.desc}</p>
+                    <h3 className="GalleryImage-title">- {image.title} -</h3>
+                    <p className="GalleryImage-desc">{image.desc}</p>
+                    <Divider/>
                 </div>
             ) : (
                 <p>Loading image...</p>
