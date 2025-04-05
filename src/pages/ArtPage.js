@@ -4,7 +4,6 @@ import PageHeader from "../components/PageHeader";
 
 const ArtPage = () => {
     const images = useImages("art");
-    console.log(images);
     
     return (
         <div className="Page-container">

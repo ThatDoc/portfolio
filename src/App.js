@@ -7,7 +7,7 @@ import Header from "./components/Header"
 
 import StartPage from "./pages/StartPage";
 import ArtPage from "./pages/ArtPage";
-import GamedevPage from "./pages/GamdevPage";
+import GamedevPage from "./pages/GamedevPage";
 
 const App = () => {
   return (
