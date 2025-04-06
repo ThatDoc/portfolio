@@ -1,13 +1,9 @@
-const repoToken = process.env.REACT_APP_GITHUB_TOKEN;
-
-
 const fetchImage = async (imagePath) => {    
     try {
     const response = await fetch(
         `https://api.github.com/repos/ThatDoc/portfolio-images/contents/images/${imagePath}?ref=main`,
         {
         headers: {
-            Authorization: `token ${repoToken}`,
             Accept: "application/vnd.github.v3.raw",
         },
         }

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const repoLink = "https://api.github.com/repos/ThatDoc/portfolio-images/contents/images.json?ref=main";
-const repoToken = process.env.REACT_APP_GITHUB_TOKEN;
 
 const useImages = (category) => {
   const [images, setImages] = useState([]);
@@ -13,7 +12,6 @@ const useImages = (category) => {
           repoLink,
           {
             headers: {
-              Authorization: `token ${repoToken}`,
               Accept: "application/vnd.github.v3.raw",
             },
           }
