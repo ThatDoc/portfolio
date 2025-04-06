@@ -18,7 +18,7 @@ const Navbar = () => {
                 key={button}
                 to={"/" + button}
                 label={button}
-                locked={lockedButton === button}
+                locked={lockedButton.toLowerCase() === button.toLowerCase()}
                 onClick={() => handleClick(button)}
               />
           ))}
