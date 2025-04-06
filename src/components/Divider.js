@@ -1,6 +1,6 @@
 const Divider = ({text}) => {
     return (
-        <div className="horizontal-line"><hr/><a>{`<${text ? ` ${text} ` : " "}>`}</a><hr/></div>
+        <div className="horizontal-line"><hr/><p>{`<${text ? ` ${text} ` : " "}>`}</p><hr/></div>
     );
 }
 
