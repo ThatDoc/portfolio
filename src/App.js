@@ -1,7 +1,7 @@
 import './index.css';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate, BrowserRouter } from "react-router-dom";
 
 import Header from "./components/Header"
 
@@ -11,7 +11,7 @@ import GamedevPage from "./pages/GamedevPage";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/portfolio">
       <div className='App'>
         <div className="App-main">
             <Header />
@@ -23,7 +23,7 @@ const App = () => {
             </Routes>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
