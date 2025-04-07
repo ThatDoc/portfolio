@@ -13,7 +13,7 @@
   --text-size-default: 32px;
   --text-size-large: 48px;
   --text-size-xlarge: 64px;
-  --text-letter-spacing-default: 1px;
+  --text-letter-spacing-default: 2px;
   --border-radius-default: 6px;
   --slide-transition-time: 0.4s;
   --scale-transition-time: 0.3s;
@@ -40,6 +40,15 @@ h1, h2, h3, p {
 p {
   margin: 1em;
   text-align: justify;
+}
+
+ul, ol {
+  text-align: left;
+  margin-left: -.5em;
+}
+
+li {
+  margin-bottom: .5em;
 }
 
 .horizontal-line {
