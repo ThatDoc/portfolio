@@ -11,6 +11,7 @@
   --outside-color: #050306;
   --text-size-small: 24px;
   --text-size-default: 32px;
+  --text-size-fine-print: 20px;
   --text-size-large: 48px;
   --text-size-xlarge: 64px;
   --text-letter-spacing-default: 2px;
@@ -20,7 +21,7 @@
   --shift-transition-time: 0.1s;
   --enlrage-scale: 1.02;
   --Y-button-offset: 2px;
-  --side-border-size: .1em;
+  --side-border-size: .5em;
   background-color: var(--outside-color);
   color: var(--text-color);
   font-family: "Dorsa", sans-serif;
@@ -45,6 +46,17 @@ p {
 ul, ol {
   text-align: left;
   margin-left: -.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  /* ☞➣➺➻➸ */
+  content: "☞";
+  margin-right: .2em;
+  line-height: 1.1;
 }
 
 li {
@@ -77,4 +89,10 @@ a.link {
 a.link:hover {
   text-decoration: none;
   color: var(--accent-hover-color);
+}
+
+p.fine-print {
+  margin: 2em;
+  font-size: var(--text-size-fine-print);
+  color: var(--secondary-color);
 }

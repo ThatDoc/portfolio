@@ -13,9 +13,9 @@
 }
 
 .App-main {
-  width: 50vw;
-  border-left: var(--side-border-size) solid var(--outside-color);
-  border-right: var(--side-border-size)solid var(--outside-color);
+  width: 55vw;
+  border-left: var(--side-border-size) dotted var(--outside-color);
+  border-right: var(--side-border-size) dotted var(--outside-color);
 }
 
 .App-link {
@@ -168,5 +168,11 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .App-main {
+    width: 80vw;
   }
 }
