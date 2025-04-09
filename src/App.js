@@ -11,7 +11,7 @@ import GamedevPage from "./pages/GamedevPage";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter>
       <div className='App'>
         <div className="App-main">
             <Header />

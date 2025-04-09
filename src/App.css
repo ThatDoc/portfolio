@@ -13,7 +13,7 @@
 }
 
 .App-main {
-  width: 55vw;
+  width: 500px;
   border-left: var(--side-border-size) dotted var(--outside-color);
   border-right: var(--side-border-size) dotted var(--outside-color);
 }
