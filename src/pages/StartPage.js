@@ -18,6 +18,9 @@ const StartPage = () => {
                     , hence the two sections on here. I'm also really into cinema and a huge fan of 
                     public transit, apparently.
                 </p>
+                <p>
+                    Contact: <a href="mailto:wojciech.liss.contact@gmail.com" className="link">wojciech.liss.contact@gmail.com</a>
+                </p>
                 <h3>
                     <Divider text={"Work Experience"}/>
                 </h3>
