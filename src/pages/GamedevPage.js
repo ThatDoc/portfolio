@@ -4,11 +4,15 @@ import PageHeader from "../components/PageHeader";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 const GamedevPage = () => {
-    // handle animating items when they come into view
-    useIntersectionObserver('h1, h2, h3, p', 'animateFadeInSlideTop');
-    useIntersectionObserver('img', 'animatePopIn');
-
     const images = useImages("gamedev");
+
+    // handle animating items when they come into view after images are loaded
+    useEffect(() => {
+        if (images.length > 0) {
+            useIntersectionObserver('h1, h2, h3, p', 'animateFadeInSlideTop');
+            useIntersectionObserver('img', 'animatePopIn');
+        }
+    }, [images]);
 
     return (
         <div className="Page-container">
