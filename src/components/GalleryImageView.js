@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 import fetchImage from "../utils/imageFetch"
 import Divider from "./Divider";
+import useDotLoading from "../hooks/useDotLoading";
+import imageLoadingTexts from "../utils/imageLoadingTexts";
+
+const GetImageLoadingText = () => {
+    return imageLoadingTexts[Math.floor(Math.random() * (imageLoadingTexts.length))];
+}
 
 const GalleryImageView = ({image}) => {
     const [imageSrc, setImageSrc] = useState(null);
+    const dots = useDotLoading();
 
     useEffect(() => {
         const loadImage = async () => {
@@ -23,7 +30,7 @@ const GalleryImageView = ({image}) => {
                     <Divider/>
                 </div>
             ) : (
-                <p>Loading image...</p>
+                <p>{GetImageLoadingText()}{dots}</p>
             )}
         </div>
     );

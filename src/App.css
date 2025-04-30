@@ -83,6 +83,12 @@
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
+.Page-gif {
+  width: 50%;
+  height: 50%;
+  margin: -.5em;
+}
+
 .PageHeader-container {
   padding-bottom: .5em;
   background-color: var(--background-color);
@@ -169,6 +175,30 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animateFadeInSlideLeft {
+  animation: fadeSlideInLeft var(--slide-transition-time) ease-out forwards;
+}
+
+.animateFadeInSlideTop {
+  animation: fadeSlideInTop var(--slide-transition-time) ease-out forwards;
+}
+
+.animatePopIn {
+  animation: popIn var(--slide-transition-time) var(--ease-out-back) forwards;
+  transform-origin: center center;
 }
 
 @media (max-width: 768px) {
