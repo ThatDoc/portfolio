@@ -1,5 +1,6 @@
 import PageHeader from "../components/PageHeader";
 import Divider from "../components/Divider";
+import me from "../images/me.gif";
 
 const StartPage = () => {
     return (
@@ -13,6 +14,7 @@ const StartPage = () => {
                     it seems as if you've stumbled upon my portfolio. Since you're already here
                     you might want to check out my work. Or not.
                 </p>
+                <img src={me} alt="Me" className="Page-gif"/>
                 <p>
                     I'm 21 years old and I like to make stuff - mainly <b>"art"</b> and <b>video games</b>
                     , hence the two sections on here. I'm also really into cinema and a huge fan of 
