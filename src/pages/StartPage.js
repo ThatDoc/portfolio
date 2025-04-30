@@ -1,8 +1,14 @@
 import PageHeader from "../components/PageHeader";
 import Divider from "../components/Divider";
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import me from "../images/me.gif";
 
 const StartPage = () => {
+    // handle animating items when they come into view
+    useIntersectionObserver('li', 'animateFadeInSlideLeft');
+    useIntersectionObserver('h1, h2, h3, p', 'animateFadeInSlideTop');
+    useIntersectionObserver('img', 'animatePopIn');
+  
     return (
         <div className="Page-container">
             <div className="PageHeader-container">
