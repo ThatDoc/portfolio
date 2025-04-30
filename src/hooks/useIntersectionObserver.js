@@ -16,7 +16,7 @@ const useIntersectionObserver = (selector, animation, options = { threshold: 0.1
         items.forEach(item => observer.observe(item));
       
         return () => observer.disconnect();
-    }, [selector, options]);
+    }, [selector, animation, options]);
 };
 
 export default useIntersectionObserver;
