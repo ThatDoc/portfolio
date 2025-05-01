@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vw;
+  margin: 0 auto;
+}
+
+.App-main {
+  position: relative;
+  width: 500px;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.App-est {
+  position: fixed;
+  top: 0;
+  writing-mode: vertical-rl;
+  pointer-events: none;
+  color: var(--text-color-dim);
+  letter-spacing: var(--text-letter-spacing-large);
 }
 
 .App-header {
@@ -10,12 +29,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.App-main {
-  width: 500px;
-  border-left: var(--side-border-size) dotted var(--outside-color);
-  border-right: var(--side-border-size) dotted var(--outside-color);
 }
 
 .App-link {
@@ -74,6 +87,18 @@
   background-color: var(--background-color);
 }
 
+.Page-content {
+  padding-top: .1em;
+}
+
+.Page-content-container {
+  background-image: url('./images/film-roll.png');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  padding-bottom: .5em;
+}
+
 .Page-header {
   background-color: var(--secondary-hover-color);
   margin-left: -.5em;
@@ -90,7 +115,6 @@
 }
 
 .PageHeader-container {
-  padding-bottom: .5em;
   background-color: var(--background-color);
 }
 
@@ -203,6 +227,6 @@
 
 @media (max-width: 768px) {
   .App-main {
-    width: 80vw;
+    width: 70vw;
   }
 }

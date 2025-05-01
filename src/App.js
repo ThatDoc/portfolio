@@ -22,6 +22,7 @@ const App = () => {
               <Route path="/Gamedev" element={<GamedevPage />} />
             </Routes>
         </div>
+        <p className='App-est'>EST. MMXXV</p>
       </div>
     </BrowserRouter>
   );
