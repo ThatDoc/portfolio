@@ -13,7 +13,7 @@ const GamedevPage = () => {
     useIntersectionObserver('img', 'animatePopIn', images.length > 0);
     // handle background scrolling
     useScrollBackground();
-    
+
     return (
         <div className="Page-container">
             <div className="PageHeader-container">
