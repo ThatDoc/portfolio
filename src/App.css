@@ -233,6 +233,10 @@
   }
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .animateFadeInSlideLeft {
   animation: fadeSlideInLeft var(--slide-transition-time) ease-out forwards;
 }
