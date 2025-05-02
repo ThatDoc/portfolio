@@ -2,6 +2,7 @@
 
 :root {
   --text-color: #ffeee1;
+  --text-color-dim: #b7a79b;
   --accent-color: #e54a24;
   --accent-hover-color: #c91d23;
   --accent-hover-secondary-color: #a6163c;
@@ -15,6 +16,7 @@
   --text-size-large: 48px;
   --text-size-xlarge: 64px;
   --text-letter-spacing-default: 2px;
+  --text-letter-spacing-large: 8px;
   --border-radius-default: 6px;
   --slide-transition-time: 0.4s;
   --scale-transition-time: 0.3s;
@@ -96,5 +98,5 @@ a.link:hover {
 p.fine-print {
   margin: 2em;
   font-size: var(--text-size-fine-print);
-  color: var(--secondary-color);
+  color: var(--text-color-dim);
 }
