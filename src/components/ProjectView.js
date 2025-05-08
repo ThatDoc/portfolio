@@ -39,7 +39,10 @@ const ProjectView = ({project, images}) => {
             <div ref={coverRef}>
                 {<GalleryImageView image={projectImages[0]} onClick={HandleClick}/> /* first image as "cover" expanding the projct on click*/}
             </div>
-            {expanded && <ImageGallery images={projectImages.slice(1)} />}
+            <div className="ProjectView-GalleryContainer">
+                {expanded && <ImageGallery images={projectImages.slice(1)} />}
+                {expanded && <button className="Navbar-link" onClick={ScrollUp}>☝︎ Top ☝︎</button>}
+            </div>
         </div>
     )
 }
