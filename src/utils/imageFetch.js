@@ -5,7 +5,6 @@ const fetchImage = async (imagePath) => {
         {
         headers: {
             Accept: "application/vnd.github.v3.raw",
-            Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
         },
         }
     );
