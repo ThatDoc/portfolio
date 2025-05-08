@@ -27,7 +27,7 @@ const GalleryImageView = ({image, onClick}) => {
                 <div className="GalleryImage-content">
                     <div className="TextOverlayWrapper">
                         <img src={imageSrc} alt={image.title} id={image.title} className="GalleryImage" onClick={onClick}/>
-                        {onClick && <div className="OverlayText">{"> "}Click Me{" <"}</div>}
+                        {onClick && <div className="OverlayText">☞</div>}
                     </div>
                     <h3 className="GalleryImage-title">- {image.title} -</h3>
                     <p className="GalleryImage-desc">{image.desc}</p>
