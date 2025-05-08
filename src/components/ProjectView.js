@@ -7,7 +7,7 @@ const ProjectView = ({project, images}) => {
     const coverRef = useRef(null);
 
     const projectImages = images.filter(image => image.project === project); // filter out images based on given project and skip the first one as it's later used as the project "cover"
-    
+
     const ScrollDown = () => {
         if (!coverRef.current)
             return;
@@ -33,15 +33,15 @@ const ProjectView = ({project, images}) => {
         else
             ScrollUp();
     }
-
     return (
         <div className="ProjectView">
             <div ref={coverRef}>
-                {<GalleryImageView image={projectImages[0]} onClick={HandleClick}/> /* first image as "cover" expanding the projct on click*/}
+                {/* first image as "cover" expanding the projct on click */}
+                <GalleryImageView image={projectImages[0]} onClick={HandleClick}/>
             </div>
             <div className="ProjectView-GalleryContainer">
                 {expanded && <ImageGallery images={projectImages.slice(1)} />}
-                {expanded && <button className="Navbar-link" onClick={ScrollUp}>☝︎ Top ☝︎</button>}
+                {expanded && <button className="Navbar-link ProjectView-ScrollToTop" onClick={ScrollUp}>☝︎ Top ☝︎</button>}
             </div>
         </div>
     )

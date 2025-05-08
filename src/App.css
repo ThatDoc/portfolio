@@ -142,13 +142,14 @@
 }
 
 .GalleryImage-container {
-  padding: 1em;
+  padding: 5%;
+  padding-bottom: 1em;
 }
 
 .GalleryImage-content {
-  animation: fadeSlideInLeft var(--slide-transition-time) ease-out both;
   border: 1px solid var(--secondary-hover-color);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeSlideInLeft var(--slide-transition-time) ease-out both;
 }
 
 .GalleryImage {
@@ -173,6 +174,12 @@
   border-bottom: 1px solid var(--secondary-hover-color);
 }
 
+.GalleryImage-title::before,
+.GalleryImage-title::after {
+  content: " - ";
+  margin: 0 0.1rem 0 0.1 rem;
+}
+
 .GalleryImage-desc {
   margin-top: -.5em;
   margin-bottom: .5em;
@@ -194,10 +201,15 @@
 }
 
 .ProjectView-GalleryContainer {
-  margin: -1em 1em 0em 1em;
+  margin: -1em 5% 0em 5%;
   padding-bottom: 1em;
   background: rgba(0, 0, 0, .1);
   border: 1px solid var(--secondary-hover-color);
+}
+
+.ProjectView-ScrollToTop, .ProjectView-ScrollToTop:hover {
+  cursor: pointer;
+  font-size: var(--text-size-small);
 }
 
 .TextOverlayWrapper {
@@ -296,6 +308,6 @@
 
 @media (max-width: 768px) {
   .App-main {
-    width: 70vw;
+    width: 325px;
   }
 }

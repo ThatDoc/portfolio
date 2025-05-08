@@ -5,7 +5,7 @@ const ProjectGallery = ({images}) => {
     
     return (
         <div>
-            {projects.map(project => {return <ProjectView project={project} images={images}/>})}
+            {projects.map(project => {return <ProjectView project={project} images={images} key={project}/>})}
         </div>
     )
 }

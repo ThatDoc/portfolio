@@ -6,7 +6,7 @@ const GalleryVideoView = ({video}) => {
         <div className="GalleryImage-container">
             <div className="GalleryImage-content">
                 <VideoEmbed videoId={video.id} title={video.title} />
-                <h3 className="GalleryImage-title">- {video.title} -</h3>
+                <h3 className="GalleryImage-title">{video.title}</h3>
                 <p className="GalleryImage-desc">{video.desc}</p>
                 <Divider/>
             </div>

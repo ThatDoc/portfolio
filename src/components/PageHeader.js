@@ -5,7 +5,7 @@ const PageHeader = ({title}) => {
         <div className="Page-header">
             <Divider/>
             <div>
-                <h2>{`- ${title} -`}</h2>
+                <h2>{title}</h2>
             </div>
             <Divider/>
         </div>

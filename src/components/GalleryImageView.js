@@ -29,7 +29,7 @@ const GalleryImageView = ({image, onClick}) => {
                         <img src={imageSrc} alt={image.title} id={image.title} className="GalleryImage" onClick={onClick}/>
                         {onClick && <div className="OverlayText">☞</div>}
                     </div>
-                    <h3 className="GalleryImage-title">- {image.title} -</h3>
+                    <h3 className="GalleryImage-title">{image.title}</h3>
                     <p className="GalleryImage-desc">{image.desc}</p>
                     <Divider/>
                 </div>

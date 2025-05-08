@@ -42,6 +42,14 @@ h1, h2, h3, p {
   font-weight: normal;
 }
 
+h1::before,
+h1::after,
+h2::before,
+h2::after {
+  content: " - ";
+  margin: 0 0.1rem 0 0.1 rem;
+}
+
 p {
   margin: 1em;
   text-align: justify;
