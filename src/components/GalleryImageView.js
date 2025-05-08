@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useMemo, useEffect, useState } from "react";
 import fetchImage from "../utils/imageFetch"
 import Divider from "./Divider";
 import useDotLoading from "../hooks/useDotLoading";
@@ -8,8 +8,9 @@ const GetImageLoadingText = () => {
     return imageLoadingTexts[Math.floor(Math.random() * (imageLoadingTexts.length))];
 }
 
-const GalleryImageView = ({image}) => {
+const GalleryImageView = ({image, onClick}) => {
     const [imageSrc, setImageSrc] = useState(null);
+    const loadingText = useMemo(() => GetImageLoadingText(), []);
     const dots = useDotLoading();
 
     useEffect(() => {
@@ -24,13 +25,16 @@ const GalleryImageView = ({image}) => {
         <div className="GalleryImage-container">
             {imageSrc ? (
                 <div className="GalleryImage-content">
-                    <img src={imageSrc} alt={image.title} id={image.title} className="GalleryImage"/>
+                    <div className="TextOverlayWrapper">
+                        <img src={imageSrc} alt={image.title} id={image.title} className="GalleryImage" onClick={onClick}/>
+                        {onClick && <div className="OverlayText">{"> "}Click Me{" <"}</div>}
+                    </div>
                     <h3 className="GalleryImage-title">- {image.title} -</h3>
                     <p className="GalleryImage-desc">{image.desc}</p>
                     <Divider/>
                 </div>
             ) : (
-                <p>{GetImageLoadingText()}{dots}</p>
+                <p>{loadingText}{dots}</p>
             )}
         </div>
     );
