@@ -1,4 +1,4 @@
-import ImageGallery from "../components/ImageGallery";
+import ProjectGallery from "../components/ProjectGallery";
 import useImages from "../hooks/useImages";
 import PageHeader from "../components/PageHeader";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
@@ -29,7 +29,7 @@ const GamedevPage = () => {
                         Now, I'm working at <a className="link" href="https://deezgames.eu">Deez Games</a> on <a className="link" href="https://store.steampowered.com/app/2923270/BabushCats/">BabushCats</a> mainly 
                         on animations, UI, art, VFX and coding.
                     </p>
-                    <ImageGallery images={images}/>
+                    <ProjectGallery images={images} />
                 </div>
             </div>
         </div>
