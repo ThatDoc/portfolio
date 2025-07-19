@@ -40,16 +40,21 @@ const StartPage = () => {
                     </h3>
                     <ul>
                         <li>
-                            2022 Internship at a gamedev studio
-                        </li>
-                        <li>
-                            2021 - 2023
-                            Solo indie game development
+                            2025 - present <a className="link" href="https://q-loc.com/quality-assurance/">QLOC</a>
+                            <br/>
+                            Junior Functional Tester
                         </li>
                         <li>
                             2023 - present <a className="link" href="https://deezgames.eu">Deez Games</a>
                             <br/>
                             Programmer, Artist, Technical Artist
+                        </li>
+                        <li>
+                            2022 Internship at a gamedev studio
+                        </li>
+                        <li>
+                            2021 - 2023
+                            Solo indie game development
                         </li>
                     </ul>
                     <h3>
@@ -57,14 +62,14 @@ const StartPage = () => {
                     </h3>
                     <ul>
                         <li>
-                            2019-2024 Technical School no. 4 in Gdansk
-                            <br/>
-                            Technician - Programmer
-                        </li>
-                        <li>
                             2024 - present Gdansk University of Technology
                             <br/>
                             Computer Science
+                        </li>
+                        <li>
+                            2019-2024 Technical School no. 4 in Gdansk
+                            <br/>
+                            Technician - Programmer
                         </li>
                     </ul>
                     <h3>
