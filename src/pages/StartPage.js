@@ -28,7 +28,7 @@ const StartPage = () => {
                     </p>
                     <img src={me} alt="Me" className="Page-gif"/>
                     <p>
-                        I'm 21 years old and I like to make stuff - mainly <b>"art"</b> and <b>video games</b>
+                        I like to make stuff - mainly <b>"art"</b> and <b>video games</b>
                         , hence the two sections on here. I'm also really into cinema and a huge fan of 
                         public transit, apparently.
                     </p>
@@ -42,10 +42,10 @@ const StartPage = () => {
                         <li>
                             2025 - present <a className="link" href="https://q-loc.com/quality-assurance/">QLOC</a>
                             <br/>
-                            Junior Functional Tester
+                            Regular Functional Tester
                         </li>
                         <li>
-                            2023 - present <a className="link" href="https://deezgames.eu">Deez Games</a>
+                            2023 - present <a className="link" href="https://deez-games.itch.io">Deez Games</a>
                             <br/>
                             Programmer, Artist, Technical Artist
                         </li>
@@ -62,9 +62,9 @@ const StartPage = () => {
                     </h3>
                     <ul>
                         <li>
-                            2024 - present Gdansk University of Technology
+                            2025 - present <a className="link" href="https://rekrutacja.pjwstk.edu.pl">Polish-Japanese Academy of Information Technology Gdansk</a>
                             <br/>
-                            Computer Science
+                            Graphic Design
                         </li>
                         <li>
                             2019-2024 Technical School no. 4 in Gdansk
