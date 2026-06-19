@@ -26,8 +26,8 @@ const GamedevPage = () => {
                         I covered on <a className="link" href="https://www.youtube.com/@dociuu">my YouTube channel</a>.
                     </p>
                     <p>
-                        Now, I'm working at <a className="link" href="https://deezgames.eu">Deez Games</a> on <a className="link" href="https://store.steampowered.com/app/2923270/BabushCats/">BabushCats</a> mainly 
-                        on animations, UI, art, VFX and coding.
+                        Now, I'm working at <a className="link" href="https://deez-games.itch.io">Deez Games</a> mainly 
+                        on animations, UI, art, VFX and some coding.
                     </p>
                     <ProjectGallery images={images} />
                 </div>
